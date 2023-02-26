@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PPK Ormawa</title>
+        <meta http-equiv="Content-Security-Policy" name="viewport" content="width=device-width, initial-scale=1.0, upgrade-insecure-requests">
+    </head>
+    <body>
+        <div class="div">
+            <div class="div-2">
+              Suhu Gabah
+            </div>
+            <div class="div-3">
+              <div id="div-4"></div>
+              <div class="div-5">Celcius</div>
+            </div>
+
+            <div class="boxtable">
+              <div class="header">
+                <div class="header_waktu"><p>Waktu</p></div>
+                <div class="header_waktu"><p>Suhu</p></div>
+              </div>
+              
+                
+                  <table>
+                    <tbody id="historyList">
+                        
+                    </tbody>
+                </table>
+              
+            </div>
+            <div class="div-11">
+              <div class="div-12"><a href="home.html">
+                <div class="div-13">
+                  <picture>
+                    
+                    <img
+                      src="asset/navbar/1.png"
+                      
+                      class="image"
+                    />
+                  </picture>
+                  <div class="builder-image-sizer image-sizer"></div>
+                </div>
+                <div class="div-14">Home</div>
+              </div></a>
+              <div class="div-15">
+                <div id="tambah"><div class="div-16">
+                  
+                    <img
+                      src="asset/navbar/2.png"
+                      
+                      class="image"
+                    />
+                  
+                  <div class="builder-image-sizer image-sizer-2"></div>
+                </div>
+                <div class="div-17">Suhu</div>
+              </div></div>
+              <div class="div-18"><a href="kelembapan.html" class="tambah">
+                <div class="div-19">
+                  
+                    <img
+                      src="asset/navbar/3.png"
+                      
+                      class="image"
+                    />
+                  
+                  <div class="builder-image-sizer image-sizer-3"></div>
+                </div>
+                <div class="div-20">Kelembapan</div>
+              </div></a>
+              <div class="div-21"><a href="control.html">
+                <div class="div-22">
+                  <picture>
+                    
+                    <img
+                      src="asset/navbar/4.png"
+                      
+                      class="image"
+                    />
+                  </picture>
+                  <div class="builder-image-sizer image-sizer-4"></div>
+                </div>
+                <div class="div-23">Kontrol</div>
+              </div></a>
+              <div class="div-21"><a href="Bantuan.html">
+                <div class="div-22">
+                  <picture>
+                    
+                    <img
+                      src="asset/navbar/5.png"
+                      
+                      class="image"
+                    />
+                  </picture>
+                  <div class="builder-image-sizer image-sizer-4"></div>
+                </div>
+                <div class="div-23">Bantuan</div>
+              </div></a>
+            </div>
+          </div>
+          <style>
+             @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+            *{
+                box-sizing: border-box;
+            }
+            body{
+
+                max-width: 100%;
+                margin: auto;
+            
+            }
+            .div {
+              display: flex;
+              flex-direction: column;
+              max-width: 100vh;
+              width: 100%;
+              justify-content: center;
+              align-items: center;
+              background-color: rgba(165, 201, 101, 1);
+              max-height: 100vh;
+              margin-left: auto;
+              margin-right: auto;
+              padding-left: 0px;
+              padding-right: 0px;
+              padding-top: 20px;
+            }
+            .div-2 {
+              max-width: 100vh;
+              display: flex;
+              flex-direction: row;
+              
+              width: 90%;
+              border-radius: 5px 20px 20px 5px;
+              justify-items: center;
+              align-items: center;
+              margin-left: 30px;
+              margin-right: 30px;
+              color: rgba(51, 63, 32, 1);
+              font-size: 24px;
+              text-align: left;
+              font-family: 'Montserrat', sans-serif;
+              padding-top: 15px;
+              padding-bottom: 15px;
+              padding-left: 7px;
+              background-color: rgba(201, 222, 162, 0.52);
+            }
+            
+            .div-3 {
+              display: flex;
+              flex-direction: column;
+              width: 181px;
+              height: 181px;
+              justify-content: center;
+              align-items: center;
+              border-radius: 20%;
+              box-shadow:
+  0px 0px 3.4px rgba(0, 0, 0, 0.036),
+  0px 0px 7.9px rgba(0, 0, 0, 0.052),
+  0px 0px 14.1px rgba(0, 0, 0, 0.064),
+  0px 0px 23.4px rgba(0, 0, 0, 0.076),
+  0px 0px 38.6px rgba(0, 0, 0, 0.088),
+  0px 0px 67.5px rgba(0, 0, 0, 0.104),
+  0px 0px 146px rgba(0, 0, 0, 0.14)
+;
+              margin-top: 15px;
+              margin-bottom: 15px;
+ 
+              background-color: rgba(201, 222, 162, 1);
+            }
+            #div-4 {
+              display: flex;
+              flex-direction: column;
+              position: relative;
+              line-height: normal;
+              height: auto;
+              font-size: 50px;
+              font-weight: 700;
+              font-family: 'Montserrat', sans-serif;
+              color: rgba(51, 63, 32, 1);
+
+            }
+
+            .div-5 {
+              display: flex;
+              flex-direction: column;
+              position: relative;
+              line-height: normal;
+              height: auto;
+              font-size: 35px;
+              color: rgba(51, 63, 32, 1);
+            }
+            .div-6 {
+              display: flex;
+              flex-direction: column;
+              margin-right: 35px;
+              margin-left: 35px;
+              margin-bottom: -2px;
+              font-family: 'Montserrat', sans-serif;
+            }
+            .boxtabel{
+              display:flex;
+              flex-direction: column;
+              box-shadow: 0px -2.9925458431243896px 5.32008171081543px 0px rgba(0, 0, 0, 0.028272492811083794),
+                0px -5.634698390960693px 10.017241477966309px 0px rgba(0, 0, 0, 0.03500000014901161),
+                0px -10.051339149475098px 17.869047164916992px 0px rgba(0, 0, 0, 0.04172750562429428),
+                0px -18.799924850463867px 33.422088623046875px 0px rgba(0, 0, 0, 0.05031980574131012),
+                0px -45px 80px 0px rgba(0, 0, 0, 0.07000000029802322),
+                0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+              padding: 3px, 3px, 3px, 3px;
+              max-width: 312px;
+            }
+            .header{
+              display: flex;
+              flex-direction: row;
+              width: 100%;
+              
+              align-items: center;
+              justify-content: center;
+              font-family: 'Montserrat', sans-serif;
+              background-color: rgba(160, 198, 93, 1);
+              box-shadow: 0px -2.9925458431243896px 5.32008171081543px 0px rgba(0, 0, 0, 0.028272492811083794),
+                0px -5.634698390960693px 10.017241477966309px 0px rgba(0, 0, 0, 0.03500000014901161),
+                0px -10.051339149475098px 17.869047164916992px 0px rgba(0, 0, 0, 0.04172750562429428),
+                0px -18.799924850463867px 33.422088623046875px 0px rgba(0, 0, 0, 0.05031980574131012),
+                0px -45px 80px 0px rgba(0, 0, 0, 0.07000000029802322),
+                0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                height: 50px;
+                border-radius: 20px 20px 0px 0px;
+                
+            }
+            .header_waktu{
+              display: flex;
+              flex-basis: 50%;
+              justify-content: center;
+              color: rgba(51, 63, 32, 1);
+              font-weight: 600;
+              font-size: 20px;
+            }
+            .header_waktu p{
+              margin: 0px;
+            }
+            table{
+              border-collapse: collapse;
+              display: flex;
+              
+              justify-content: center;
+              width: 100%;
+              border-radius: 2%;
+              background-color: rgba(201, 222, 162, 1);
+              height: 242px;
+                box-shadow: 0px -2.9925458431243896px 5.32008171081543px 0px rgba(0, 0, 0, 0.028272492811083794),
+                  0px -5.634698390960693px 10.017241477966309px 0px rgba(0, 0, 0, 0.03500000014901161),
+                  0px -10.051339149475098px 17.869047164916992px 0px rgba(0, 0, 0, 0.04172750562429428),
+                  0px -18.799924850463867px 33.422088623046875px 0px rgba(0, 0, 0, 0.05031980574131012),
+                  0px -45px 80px 0px rgba(0, 0, 0, 0.07000000029802322),
+                  0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+              margin-bottom: 7px;
+              overflow: scroll;
+              overflow-x: hidden;
+              font-family: 'Montserrat', sans-serif;
+            }
+
+            td{
+                justify-content: center;
+                padding: 5px 30px 5px 50px;
+                
+            }
+            
+            tr:nth-child(even){
+            background-color: #ededcd;
+            }
+            
+            
+            
+            
+            /* width */
+              ::-webkit-scrollbar {
+                width: 10px;
+              }
+
+              /* Track */
+              ::-webkit-scrollbar-track {
+                background: rgba(160, 198, 93, 1);
+              }
+
+              /* Handle */
+              ::-webkit-scrollbar-thumb {
+                background: rgba(201, 222, 162, 1);
+                border-radius: 20px;
+              }
+
+              /* Handle on hover */
+              ::-webkit-scrollbar-thumb:hover {
+                background: rgba(51, 63, 32, 1);
+              }
+            
+            .div-11 {
+              padding-right: 20px;
+              padding-left: 20px;
+              background-color: rgba(255, 255, 255, 1);
+              width: auto;
+              align-self: stretch;
+              padding-top: 0px;
+              display: flex;
+              flex-direction: row;
+              max-width: 100vh;
+            }
+            
+            .div-12 {
+              display: flex;
+              flex-direction: column;
+              max-width: 56.75px;
+              justify-content: center;
+              align-items: center;
+              background-color: rgba(255, 255, 255, 0.5299999713897705);
+              height: auto;
+              flex-grow: 1;
+              width: auto;
+              align-self: stretch;
+              min-height: 74px;
+              margin-left: auto;
+              margin-right: auto;
+              cursor: pointer;
+            }
+            .div-12:hover{
+              background-color: #eaf2db;
+            }
+            .div-13 {
+              display: flex;
+              position: relative;
+              min-width: 20px;
+              min-height: 20px;
+              max-width: 32px;
+              width: 32px;
+            }
+
+            .div-14 {
+              max-width: 29px;
+              margin-top: 4px;
+              color: rgba(115, 140, 70, 1);
+              font-size: 10px;
+              letter-spacing: 0%;
+              text-align: left;
+              font-family: "Inter", sans-serif;
+            }
+            .div-15{
+            display: flex;
+            flex-direction: column;
+            max-width: 56.75px;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            flex-grow: 1;
+            width: auto;
+            align-self: stretch;
+            min-height: 74px;
+            margin-left: auto;
+            margin-right: auto;
+            cursor: pointer;
+            background-color: rgba(201, 222, 162, 0.52);
+            }
+            .div-15:hover{
+            background-color: #eaf2db;
+            }
+            .div-16 {
+            display: flex;
+            position: relative;
+            min-width: 20px;
+            min-height: 20px;
+            max-width: 29px;
+            width: 100%;
+            }
+
+            .div-17 {
+            max-width: 29px;
+            margin-top: 4px;
+            color: rgba(115, 140, 70, 1);
+            font-size: 10px;
+            letter-spacing: 0%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-family: "Inter", sans-serif;
+            }
+            .div-18 {
+              display: flex;
+              flex-direction: column;
+              max-width: 56.75px;
+              justify-content: center;
+              align-self: stretch;
+              width: 100%;
+              align-items: center;
+              min-height: 74px;
+              margin-left: auto;
+              margin-right: auto;
+              cursor: pointer;
+            }
+            .div-18:hover{
+                background-color: #eaf2db;
+            }
+            .div-19 {
+              display: flex;
+              position: relative;
+              min-width: 20px;
+              min-height: 20px;
+              max-width: 22px;
+              width: 22px;
+              margin-left: auto;
+              margin-right: auto;
+              cursor: pointer;
+            }
+            
+            .div-20 {
+              max-width: 61px;
+              margin-top: 6px;
+              color: rgba(115, 140, 70, 1);
+              font-size: 10px;
+              letter-spacing: 0%;
+              text-align: left;
+              font-family: "Inter", sans-serif;
+            }
+            
+            .div-21 {
+              display: flex;
+              flex-direction: column;
+              max-width: 56.75px;
+              justify-content: center;
+              align-self: stretch;
+              width: 100%;
+              align-items: center;
+              min-height: 74px;
+              margin-left: auto;
+              margin-right: auto;
+              cursor: pointer;
+            }
+            .div-21:hover{
+              background-color: #eaf2db;
+            }
+            .div-22 {
+              display: flex;
+              position: relative;
+              min-width: 20px;
+              min-height: 20px;
+              max-width: 30px;
+              width: 30px;
+            }
+
+            .div-23 {
+              max-width: 36px;
+              margin-top: 2px;
+              color: rgba(115, 140, 70, 1);
+              font-size: 10px;
+              letter-spacing: 0%;
+              text-align: left;
+              font-family: "Inter", sans-serif;
+            }
+            a:link{
+              text-decoration: none;
+            }
+            a:visited{
+              text-decoration: none;
+            }
+            a:hover{
+              text-decoration: none;
+            }
+            a:active{
+              text-decoration: none;
+            }
+            @media (max-width: 640px) {
+              .div {
+                width: 100%;
+                height: 100vh;
+              }
+            }
+            @media screen and (min-height: 800px) and (max-height: 1000px){
+      
+      .div-11{
+        margin-top: auto;
+      }
+      .div-6{
+        margin: auto;
+        margin-top: 25px;
+      }
+      .div-3{
+        margin: auto;
+        height: 200px;
+        width: 200px;
+      }
+      .div-2{
+        margin: auto;
+        margin-bottom: 27px;
+        margin-top: 27px;
+      }
+      .div-10{
+        height: 350px;
+        max-height: 50vh;
+        
+      }
+    }
+    @media  screen and (min-height: 700px) and (max-height: 799px) {
+      .div-11{
+        margin-top: auto;
+      }
+      .div-6{
+        margin: auto;
+        margin-top: 25px;
+      }
+      .div-3{
+        margin: auto;
+        height: 200px;
+        width: 200px;
+      }
+      .div-2{
+        margin: auto;
+        margin-bottom: 27px;
+        margin-top: 27px;
+      }
+      .div-10{
+        height: 220px;
+        max-height: 50vh;
+        
+      }
+    }
+    @media screen and (max-width: 374px) {
+      .div-11 {
+              padding-right: 5px;
+              padding-left: 5px;
+              background-color: rgba(255, 255, 255, 1);
+              width: auto;
+              align-self: stretch;
+              padding-top: 0px;
+              display: flex;
+              flex-direction: row;
+              max-width: 100vh;
+            }
+    }
+    @media screen and (max-height: 600px) {
+        .div-3{
+          max-height: 140px;
+          max-width: 140px;
+        }
+        #div-4{
+          font-size: 35px;
+        }
+        .div-5{
+          font-size: 20px;
+        }
+    }
+          </style>
+          <script>
+            const api_suhu = 'https://io.adafruit.com/api/v2/PPK_ORMAWA/feeds/temperature'
+            
+            store();
+            getData(); 
+            setInterval(getData, 15000);
+            setInterval(store, 15000);
+            async function getData(){
+              const response_suhu = await fetch(api_suhu);
+              const data_suhu = await response_suhu.json();
+              let data_fix = data_suhu.last_value;
+              document.getElementById('div-4').textContent = data_fix;
+              
+              /*
+              let currentTimeDate = new Date();
+              var hours   =  currentTimeDate.getHours();
+              var minutes =  currentTimeDate.getMinutes();
+              var seconds = currentTimeDate.getSeconds();
+              minutes = minutes < 10 ? '0'+minutes : minutes;
+              var currentTime = `${hours}:${minutes}:${seconds}`;
+             
+              let row = document.createElement('tr');
+              row.innerHTML = "<td>" + currentTime + "</td>";
+              row.innerHTML += "<td >" + data_suhu.feeds[0].field1 + "</td>";
+
+              document.getElementById("historyList").appendChild(row); 
+              //console.log(currentTime);
+              //console.log(data_fix);*/
+              return data_fix;
+              
+            }
+            async function store(){
+                let result = await getData();
+                console.log(result);
+                function waktu(){
+                        let currentTimeDate = new Date();
+                        var hours   =  currentTimeDate.getHours();
+                        var minutes =  currentTimeDate.getMinutes();
+                        var seconds = currentTimeDate.getSeconds();
+                        minutes = minutes < 10 ? '0'+minutes : minutes;
+                        seconds = seconds < 10 ? '0'+seconds : seconds;
+                        var currentTime = `${hours}:${minutes}:${seconds}`;
+                        return currentTime;
+                    }
+                    const history = {
+              kelembapan: result,
+              timer: waktu() 
+            }
+            const CACHE_KEY = "temperatur";
+
+                  function checkForStorage() {
+                    return typeof(Storage) !== "undefined";
+                  }
+
+                  function putHistory(data) {
+            if (checkForStorage()) {
+                let historyData = null;
+                if (localStorage.getItem(CACHE_KEY) === null) {
+                    historyData = [];
+                } else {
+                    historyData = JSON.parse(localStorage.getItem(CACHE_KEY));
+                }
+          
+                historyData.unshift(data);
+          
+                if (historyData.length > 20) {
+                    historyData.pop();
+                }
+          
+                localStorage.setItem(CACHE_KEY, JSON.stringify(historyData));
+            }
+          }
+          putHistory(history);
+            }
+
+            
+                const CACHE_KEY = "temperatur";
+                function checkForStorage() {
+                    return typeof(Storage) !== "undefined";
+                  }
+               
+            function showHistory() {
+            if (checkForStorage) {
+                return JSON.parse(localStorage.getItem(CACHE_KEY)) || [];
+                
+            } else {
+                return [];
+            }
+          }
+          
+          
+
+          function renderHistory() {
+            const historyData = showHistory();
+            let historyList = document.querySelector("#historyList");
+            historyList.innerHTML = "";
+          
+            for (let history of historyData) {
+                let row = document.createElement('tr');
+                row.innerHTML = "<td>" + history.timer +  "</td>";
+                row.innerHTML += "<td>" + history.kelembapan + "'C" + "</td>";
+
+          
+                historyList.appendChild(row);    
+            }}
+          renderHistory();
+          showHistory();
+          setInterval(showHistory, 1000);
+          setInterval(renderHistory, 1000);
+          </script>
+    </body>
+</html>
